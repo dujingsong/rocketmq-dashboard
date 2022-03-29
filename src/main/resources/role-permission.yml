@@ -37,3 +37,4 @@ rolePerms:
     - /rocketmq-console/dlqMessage/*.query
     - /rocketmq-console/dlqMessage/exportDlqMessage.do
     - /rocketmq-console/dlqMessage/batchResendDlqMessage.do
+    - /rocketmq-console/message/consumeMessageDirectly.do
