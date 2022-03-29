@@ -23,17 +23,17 @@
 
 rolePerms:
   ordinary:
-    - /rocketmq/*.query
-    - /ops/*.query
-    - /dashboard/*.query
-    - /topic/*.query
-    - /topic/sendTopicMessage.do
-    - /producer/*.query
-    - /message/*.query
-    - /messageTrace/*.query
-    - /monitor/*.query
-    - /consumer/*.query
-    - /cluster/*.query
-    - /dlqMessage/*.query
-    - /dlqMessage/exportDlqMessage.do
-    - /dlqMessage/batchResendDlqMessage.do
+    - /rocketmq-console/rocketmq/*.query
+    - /rocketmq-console/ops/*.query
+    - /rocketmq-console/dashboard/*.query
+    - /rocketmq-console/topic/*.query
+    - /rocketmq-console/topic/sendTopicMessage.do
+    - /rocketmq-console/producer/*.query
+    - /rocketmq-console/message/*.query
+    - /rocketmq-console/messageTrace/*.query
+    - /rocketmq-console/monitor/*.query
+    - /rocketmq-console/consumer/*.query
+    - /rocketmq-console/cluster/*.query
+    - /rocketmq-console/dlqMessage/*.query
+    - /rocketmq-console/dlqMessage/exportDlqMessage.do
+    - /rocketmq-console/dlqMessage/batchResendDlqMessage.do
