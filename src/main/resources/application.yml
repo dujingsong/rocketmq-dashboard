@@ -42,17 +42,14 @@ rocketmq:
     # if this value is empty,use env value rocketmq.config.namesrvAddr  NAMESRV_ADDR | now, default localhost:9876
     # configure multiple namesrv addresses to manage multiple different clusters
     namesrvAddrs:
-      - 10.100.0.190:9876
-#      - 10.100.12.187:9876
-#      - 10.100.2.51:9876
+      - 192.168.30.1:9876
+      - 192.168.30.1:9877
     # if you use rocketmq version < 3.5.8, rocketmq.config.isVIPChannel should be false.default true
     isVIPChannel:
     # timeout for mqadminExt, default 5000ms
     timeoutMillis:
     # rocketmq-console's data path:dashboard/monitor
-#    dataPath: d:/rocketmq/data/rocketmq-dashboard/data
-    dataPath: /app/xsbank/rocketmq/data/rocketmq-dashboard/data
-#    dataPath: /u01/app/rocketmq/data/rocketmq-dashboard-8081/data
+    dataPath: d:/rocketmq/data/rocketmq-dashboard/data
     # set it false if you don't want use dashboard.default true
     enableDashBoardCollect: true
     # set the message track trace topic if you don't want use the default one
