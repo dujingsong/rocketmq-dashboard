@@ -447,8 +447,13 @@ public class MQAdminExtImpl implements MQAdminExt {
         catch (Exception e) {
         }
         MQAdminImpl mqAdminImpl = MQAdminInstance.threadLocalMqClientInstance().getMQAdminImpl();
+
+        long nearlyTime = 0L;
+
         QueryResult qr = Reflect.on(mqAdminImpl).call("queryMessage", topic, msgId, 32,
-            MessageClientIDSetter.getNearlyTimeFromID(msgId).getTime() - 1000 * 60 * 60 * 13L, Long.MAX_VALUE, true).get();
+                nearlyTime, Long.MAX_VALUE, true).get();
+//        QueryResult qr = Reflect.on(mqAdminImpl).call("queryMessage", topic, msgId, 32,
+//            MessageClientIDSetter.getNearlyTimeFromID(msgId).getTime() - 1000 * 60 * 60 * 13L, Long.MAX_VALUE, true).get();
         if (qr != null && qr.getMessageList() != null && qr.getMessageList().size() > 0) {
             return qr.getMessageList().get(0);
         }
