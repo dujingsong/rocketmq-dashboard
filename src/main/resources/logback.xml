@@ -17,6 +17,7 @@
   -->
 
 <configuration>
+	<property name="LOG_HOME" value="D:/tmp/rocketmq/logs/rocketmq-dashboard"/>
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder charset="UTF-8">
 			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] %p %t - %m%n</pattern>
@@ -25,10 +26,10 @@
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${user.home}/logs/rocket-dashboard-logs/rocketmq-dashboard.log</file>
+		<file>${LOG_HOME}/logs/rocket-dashboard-logs/rocketmq-dashboard.log</file>
 		<append>true</append>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${user.home}/logs/rocket-dashboard-logs/rocketmq-dashboard-%d{yyyy-MM-dd}.%i.log
+			<fileNamePattern>${LOG_HOME}/logs/rocket-dashboard-logs/rocketmq-dashboard-%d{yyyy-MM-dd}.%i.log
 			</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy
 				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">

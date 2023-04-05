@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="rocketmq-dashboard" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.apache.rocketmq.dashboard.App" />
+    <option name="VM_PARAMETERS" value="-XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms128m -Xmx128m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC -Duser.home=D:\tmp\rocketmq\logs\rocketmq-dashboard -Dserver.port=8080" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
